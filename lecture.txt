@@ -1,0 +1,76 @@
+docker run <image-id>
+docker run -p <local-port>:<docker-port> <container-id>
+docker run -it -p 3000:3000 CONTAINER_ID
+minikube delete
+minikube start --driver=hyperkit
+docker kill <container-id>
+docker-compose up --build
+
+kubectl apply -f 
+
+kubectl get pods
+kubectl delete pods <service_name>
+kubectl delete --all pods
+
+kubectl get deployments
+kubectl delete deployment <deployment_name>
+
+kubectl get services
+kubectl delete service <service_name>
+
+kubectl logs <XX_name>
+
+kubectl get storageclass
+kubectl describe storageclass
+
+kubectl get pv
+
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=1234asdf
+
+kubectl get secrets
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.40.1/deploy/static/provider/cloud/deploy.yaml
+minikube addons enable ingress
+
+kubectl get pods -n ingress-nginx
+
+docker container rm 228911b5301c
+docker container stop 228911b5301c
+
+INTO DATA
+[DockerHub ID] : lrgoncalve5
+docker pull ubuntu
+[BUILD data mining IMAGE]
+docker build  -t lrgoncalve5/intodata_data-mining .
+docker build  -t lrgoncalve5/intodata_data-mining  -f expert-solution/data-mining/Dockerfile .
+[Run image in iteractive way]
+docker run -it lrgoncalve5/intodata_data-mining sh
+[LI_AT] : export LI_AT=AQEDAQHDpq0Cm37GAAABdsjQG0wAAAF27NyfTFYAG2dHuRtLCxd4zCAw_gzJTtyF8zmyW2wXql4nqU5uk8dJwD92TGsSxg6sS9AZ_0FCq1fr2MzQYQrTmxye5z8twu9rgQgb-fMNELMHFRad3ob6QeV-
+[TEST RUN] : python3 cli.py --user=leandrorgoncalves --headless
+
+[CONTEXT] : docker run <image-id> 
+image-id = lrgoncalve5/intodata_data-mining:latest
+docker run lrgoncalve5/intodata_data-mining:latest
+docker run lrgoncalve5/intodata_data-mining 
+
+docker run -p <local-port>:<docker-port> <container-id>
+docker run -p 5000:5000 lrgoncalve5/intodata_data-mining
+
+[DATA BASE]
+[link] : https://cloudnweb.dev/2019/11/how-to-run-mongodb-as-a-docker-container-in-development/
+docker pull mongo:4.4.2
+docker run -d -p 27017:27017 --name experts -d mongo:4.4.2
+docker stop experts
+docker start experts
+docker rm experts
+
+[DATA BROKER]
+[link] : https://devshawn.com/blog/apache-kafka-docker-quick-start/
+https://medium.com/@rinu.gour123/kafka-docker-steps-to-run-apache-kafka-using-docker-1645e85acd50
+
+
+
+docker run -p 443:443 -d --name wildfly lrgoncalve5/intodata_wildfly
+docker exec -it <container-name> bash
+docker stop <container-name>
+docker rm <container-name>
